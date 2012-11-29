@@ -15,3 +15,9 @@
 *.exe
 *.out
 *.app
+
+#project related files (codelite)
+*.project
+
+relaxed_ttp.txt
+Debug/*

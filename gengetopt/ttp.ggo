@@ -1,0 +1,26 @@
+# Name of your program
+package "Algoritmo genetico para el relaxed traveling tournament problem (RTTP)"
+version "1.0"
+purpose "El presente programa contiene la implementacion de un algoritmo genetico para resolver el
+         problema del relaxed traveling tournament problem."
+
+# Options
+option  "instancia" i "Archivo que contiene la instancia del TTP a resolver." 
+        string typestr="nombre de archivo"     required
+
+text "\nParametros del algoritmo"
+
+option  "numgen" g "Numero maximo de generaciones a ejecutar." 
+        int optional default="500"
+
+option  "mut" m "Probabilidad de mutacion del algoritmo." 
+        double optional default="0.1"
+
+option  "cross" c "Probabilidad de cruzamiento del algoritmo." 
+        double optional default="0.9"
+        
+option  "pop" p "Tamano de la poblacion del algoritmo." 
+        double optional default="50"
+
+option  "srand" r "Semilla a utilizar para la generacion de numeros aleatoreos (debe ser un numero entero)." 
+        int optional default="100"
